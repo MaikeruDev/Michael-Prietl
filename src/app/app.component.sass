@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap')
+
+li
+    list-style-type: none
+    font-family: 'Poppins', sans-serif
+    float: right
+    margin-right: 90px
+    padding: 15px 5px 5px 5px
+    color: #5F5F5F
+    font-weight: 500
+    cursor: pointer
+    
+li:first-child
+    float: left
+    color: #682AE9
+    font-weight: 600
+    font-size: 36.5px
+    margin-left: 85px
+
+li:nth-child(2)
+    padding-top: 5px
+
+li.active
+    border-bottom: 2px #682AE9 solid
+    color: #682AE9
+
+li:last-child
+    display: none
+
+div.wrapper:first-child
+    padding-top: 25px
+    background: linear-gradient(1.44deg, #624DE3 -102.76%, rgba(98, 77, 227, 0) 123.48%)
+    height: 666px
+
+div.header
+    position: absolute
+    left: 11vw
+    top: 150px
+    margin-right: 10px
+
+h3.subtitle
+    font-family: 'Poppins'
+    font-style: normal
+    font-weight: 700
+    font-size: 70px
+    color: #FFFFFF
+    margin-bottom: -5px
+
+h1.title
+    font-family: 'Poppins'
+    font-size: 95px
+    color: #682AE9
+    font-weight: 700
+    margin-top: -35px
+    margin-bottom: 0px
+    br
+        display: none
+
+h6.slogan
+    font-family: 'Poppins'
+    font-size: 30px
+    color: #FFFFFF
+    margin-top: -5px
+    margin-bottom: 35px
+    br
+        display: none
+
+button.menu_btn
+    box-shadow: 4px 4px 14px -6px #000000
+    background: #682AE9
+    color: white
+    font-family: 'Poppins'
+    border-radius: 50px
+    padding: 3px 45px 3px 45px
+    font-size: 15px
+
+div.profile_image
+    position: absolute
+    right: 15vw
+    top: 200px
+
+div.profile_image div img.image
+    pointer-events: none
+    height: 350px
+    border: 5px white solid
+    position: absolute
+    z-index: 2
+    right: 50%
+
+div.profile_image div img.dots1
+    pointer-events: none
+    position: absolute
+    right: -70px
+    top: -20px
+    z-index: 1
+
+div.profile_image div img.dots2
+    pointer-events: none
+    position: absolute
+    right: 200px
+    top: 250px
+    z-index: 1
+
+@media screen and (max-width: 1400px)
+    li
+        display: none
+        
+    li:first-child
+        display: block
+        float: left
+        color: #682AE9
+        font-weight: 600
+        font-size: 36.5px
+        margin-left: 0px
+    
+    li:last-child
+        display: block
+        position: absolute
+        right: 20px
+        top: 45px
+        margin: 0
+        button.menu_btn
+            padding: 0
+            background: transparent
+            box-shadow: none
+            color: #682AE9
+            transform: scale(1.5)
+
+    h6.slogan
+        br
+            display: block
+
+    div.profile_image
+        position: absolute
+        top: 300px
+
+    div.wrapper:first-child
+        padding-top: 25px
+        background: linear-gradient(1.44deg, #624DE3 -102.76%, rgba(98, 77, 227, 0) 123.48%)
+        height: 1100px
+
+@media screen and (max-width: 1075px)
+    div.profile_image
+        position: absolute
+        right: unset
+        left: 360px
+        top: 800px
+
+    div.profile_image div img.image
+        height: 250px
+
+    div.profile_image div img.dots1
+        pointer-events: none
+        position: absolute
+        right: -70px
+        top: -20px
+        z-index: 1
+
+    div.profile_image div img.dots2
+        pointer-events: none
+        position: absolute
+        right: 60px
+        top: 160px
+        z-index: 1
+
+@media screen and (max-width: 775px)
+    h3.subtitle
+        font-size: 45px
+
+    h1.title
+        font-size: 75px
+        br
+            display: block
+
+    div.profile_image
+        position: absolute
+        right: unset
+        left: 300px
+        top: 700px
+
+    div.profile_image div img.image
+        height: 200px
+
+    div.profile_image div img.dots1
+        pointer-events: none
+        position: absolute
+        right: -40px
+        top: -20px
+        height: 120px
+        z-index: 1
+
+    div.profile_image div img.dots2
+        pointer-events: none
+        position: absolute
+        right: 60px
+        height: 120px
+        top: 120px
+        z-index: 1
+    
