@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import {MatButtonModule} from '@angular/material/button'; 
 import {MatIconModule} from '@angular/material/icon'; 
 
+import { SwiperModule } from 'swiper/angular';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import {MatIconModule} from '@angular/material/icon';
     BrowserModule,
     AppRoutingModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

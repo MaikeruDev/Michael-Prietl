@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap')
 
+div.wrapper:nth-child(odd)
+    background: linear-gradient(1.44deg, #624DE3 -102.76%, rgba(98, 77, 227, 0) 123.48%)
+
 li
     list-style-type: none
     font-family: 'Poppins', sans-serif
@@ -253,6 +256,9 @@ div.wrapper:nth-child(2)
 
     div.wrapper:first-child
         height: 1150px
+    
+    div.wrapper:nth-child(2)
+        height: 1050px
 
     div.grid_wrapper
         display: none !important
@@ -274,6 +280,7 @@ div.wrapper:nth-child(2)
             grid-area: row1
             margin-left: 20px
             img
+                pointer-events: none
                 width: 265px
                 padding: 30px
                 margin: 0 20px 20px 20px
@@ -314,7 +321,6 @@ div.wrapper:nth-child(2)
     h1.title
         font-size: 75px
         
-
     div.profile_image
         position: absolute
         right: unset
@@ -339,6 +345,10 @@ div.wrapper:nth-child(2)
         height: 120px
         top: 120px
         z-index: 1
+
+    div.wrapper:nth-child(2)
+        height: 1450px
+
     div.grid_wide_mobile
         display: grid !important
         grid-template-areas: "title" "row1" "row2"
@@ -398,4 +408,5 @@ div.wrapper:nth-child(2)
                 padding-left: 20px
                 padding-right: 10px
     
-    
+div.wrapper:nth-child(3)
+    height: 1100px
