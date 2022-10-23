@@ -275,7 +275,6 @@ div.wrapper:nth-child(2)
             margin-left: 20px
             img
                 width: 265px
-                border: 5px white solid
                 padding: 30px
                 margin: 0 20px 20px 20px
                 background: linear-gradient(0deg, #624DE3 -25.59%, white 100%)
@@ -340,6 +339,63 @@ div.wrapper:nth-child(2)
         height: 120px
         top: 120px
         z-index: 1
-
+    div.grid_wide_mobile
+        display: grid !important
+        grid-template-areas: "title" "row1" "row2"
+        height: 500px
+        h4
+            grid-area: title
+            font-family: 'Poppins'
+            font-style: normal
+            font-weight: 600
+            font-size: 50px
+            line-height: 75px
+            color: #624DE3 
+            margin: 20px auto 5px auto
+        div.row1
+            grid-area: row1
+            position: relative
+            img
+                width: 265px
+                padding: 30px
+                margin: 0 20px 20px 0
+                background: linear-gradient(0deg, #624DE3 -25.59%, white 100%)
+                float: left
+                position: relative
+                left: 50%
+                transform: translate(-50%)                    
+            p
+                font-family: 'Inter'
+                font-style: normal
+                font-weight: 400
+                font-size: 22px
+                line-height: 35px
+                color: #4F4E4E 
+                float: left
+                padding-right: 10px
+        div.row2
+            grid-area: row2
+            position: relative
+            img
+                width: 280px
+                border: 8px white solid
+                pointer-events: none
+                float: left
+                padding: 30px
+                margin: 0 20px 20px 0
+                float: left
+                position: relative
+                left: 50%
+                transform: translate(-50%) 
+            p
+                font-family: 'Inter'
+                font-style: normal
+                font-weight: 400
+                font-size: 22px
+                line-height: 35px
+                color: #4F4E4E 
+                float: left
+                padding-left: 20px
+                padding-right: 10px
     
     
